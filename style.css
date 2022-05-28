@@ -14,18 +14,20 @@
 
 .container {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
 }
 
 .header {
     height: 75px;
     background-color: #222222;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header-elements {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -37,6 +39,7 @@
     align-items: center;
     margin-top: 15px;
     margin-bottom: 16px;
+    margin-right: 400px;
 }
 
 .top-header-area2 {
@@ -101,7 +104,7 @@
     padding: 10px;
 }
 
-.menu-box-close:hover .mega-box-menu {
+.menu-box-close2:hover .mega-box-menu {
     display: none;
 }
 
@@ -157,10 +160,8 @@
 
 .underheader-background {
     height: 764px;
-    border-radius: 0px;
     background-color: #F1E4E6;
     display: flex;
-    justify-content: center;
 }
 
 .underheader-background-spaces-1 {
@@ -332,8 +333,8 @@
 
 .products-all-button {
     height: 46px;
-    width: 210px;
-    padding: 23px 105px;
+    max-width: 120px;
+    padding: 23px 60px;
     border: 1px solid #FF6A6A;
     font-family: 'Lato';
     font-style: normal;
@@ -441,6 +442,17 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscription-form-text-main {
+    font-weight: 300;
 }
 
 .subscription-form-field {
