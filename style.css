@@ -16,6 +16,7 @@
     margin: 0 auto;
     max-width: 1200px;
     display: flex;
+    justify-content: center;
 }
 
 .header {
@@ -32,7 +33,7 @@
 }
 
 .top-header-area1 {
-    width: 150px;
+    max-width: 150px;
     height: 44px;
     display: flex;
     justify-content: space-between;
@@ -43,13 +44,15 @@
 }
 
 .top-header-area2 {
-    width: 200px;
+    max-width: 200px;
     height: 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
     margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: 100px;
 }
 
 .header-item {
@@ -249,16 +252,17 @@
     flex-direction: column;
 }
 
-.ft-header1 {
+.ft-header {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
     color: #222222;
+
 }
 
-.ft-header2 {
+.ft-header-description {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -268,7 +272,7 @@
 }
 
 .features-products {
-    width: 1200px;
+    max-width: 1200px;
     margin-top: 48px;
     display: flex;
     align-items: center;
@@ -343,6 +347,125 @@
     line-height: 19px;
     color: #F26376;
     text-decoration: none;
+}
+
+
+
+/* --- From Lesson --- */
+
+.item-section-products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-section-heading {
+    margin-top: 100px;
+}
+
+.item-section-description {
+    margin-bottom: 60px;
+}
+
+.item-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    background-color: #F8F8F8;
+}
+
+.item-link {
+    display: block;
+    width: 360px;
+}
+
+.item-picture {
+    width: 100%;
+}
+
+.text-box {
+    padding: 20px;
+
+}
+
+.item-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.item-description {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-bottom: 16px;
+}
+
+.item-price {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.item:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    width: 360px;
+}
+
+.item:hover .item-picture {
+    filter: brightness(30%);
+}
+
+
+.item-add-box {
+    display: none;
+    position: absolute;
+    top: 188px;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.item-add-box-link-button {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    border: 1px solid rgb(254, 254, 254);
+    pointer-events: auto;
+}
+
+.item-add-box-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 8px;
+}
+
+.item-add-box-link-button:hover {
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.item:hover .item-add-box {
+    display: flex;
 }
 
 
@@ -425,7 +548,7 @@
     line-height: 24px;
     text-align: center;
     color: #222224;
-    width: 360px;
+    max-width: 360px;
     margin-top: 30px;
 }
 
@@ -476,10 +599,17 @@
     width: 256px;
     height: 49px;
     background: #E1E1E1;
-    justify-content: center;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    position: relative;
 }
+
+.subscription-form-field-text::placeholder {
+    position: absolute;
+    left: 30px;
+    top: 17px;
+}
+
 
 .subscription-form-field-button {
     font-family: 'Lato';
@@ -493,7 +623,7 @@
     justify-content: center;
     color: #FFFFFF;
     width: 100px;
-    height: 49px;
+    height: 53px;
     background: #F16D7F;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
