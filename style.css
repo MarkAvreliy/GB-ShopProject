@@ -582,7 +582,20 @@
     justify-content: space-between;
 }
 
+.social-icon {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
 .social-icon:hover {
-    filter: brightness(50%);
     background-color: #F16D7F;
+    color: #FFFFFF;
+}
+
+.social-icon:hover .social-icon-pic {
+    filter: invert(100%);
 }
