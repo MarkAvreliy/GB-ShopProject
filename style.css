@@ -825,12 +825,18 @@
 }
 
 .breadcrumb-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 10px;
 }
 
-.breadcrumb-nav-text {
+.breadcrumb-nav-item {
+  display: inline-block;
+}
+
+.breadcrumb-nav-item:not(:last-of-type)::after {
+  content: "/";
+}
+
+.breadcrumb-nav-link {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
@@ -839,7 +845,7 @@
   color: #636363;
 }
 
-.breadcrumb-nav-curloc-text {
+.breadcrumb-nav-curloc {
   font-family: 'Lato';
   font-style: normal;
   font-weight: bold;
