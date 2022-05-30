@@ -637,3 +637,47 @@
 .social-icon:hover .social-icon-pic {
     filter: invert(100%);
 }
+
+
+
+
+/* --- catalog --- */
+
+.breadcrumb {
+    background-color: #F8F3F4;
+    height: 148px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.breadcrumb-location-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.breadcrumb-nav {
+    display: flex;
+}
+
+.breadcrumb-nav-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumb-nav-curloc-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
