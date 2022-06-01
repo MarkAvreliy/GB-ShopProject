@@ -160,6 +160,7 @@
   margin-top: 5px;
   margin-left: 28px;
   margin-right: 144px;
+  text-decoration: none;
 }
 
 .mega-heading {
@@ -173,6 +174,7 @@
   margin-bottom: 12px;
   margin-left: 28px;
   margin-right: 144px;
+  text-decoration: none;
 }
 
 .mega-link {
@@ -185,6 +187,7 @@
   margin-left: 48px;
   margin-bottom: 9px;
   display: block;
+  text-decoration: none;
 }
 
 .mega-link:hover {
@@ -292,6 +295,7 @@
   line-height: 19px;
   text-align: center;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .offer-items-for {
@@ -303,6 +307,7 @@
   text-align: center;
   color: #F16D7F;
   margin-top: 5px;
+  text-decoration: none;
 }
 
 .ol1-items2 {
@@ -366,6 +371,7 @@
   font-size: 30px;
   line-height: 36px;
   color: #222222;
+  text-decoration: none;
 }
 
 .ft-header-description {
@@ -376,6 +382,7 @@
   line-height: 17px;
   color: #9F9F9F;
   margin-top: 6px;
+  text-decoration: none;
 }
 
 /* --- Product items --- */
@@ -403,6 +410,7 @@
 .item-link {
   display: block;
   width: 360px;
+  text-decoration: none;
 }
 
 .item-picture {
@@ -421,6 +429,7 @@
   line-height: 16px;
   color: #000000;
   margin-bottom: 12px;
+  text-decoration: none;
 }
 
 .item-description {
@@ -431,6 +440,7 @@
   line-height: 17px;
   color: #5D5D5D;
   margin-bottom: 16px;
+  text-decoration: none;
 }
 
 .item-price {
@@ -440,6 +450,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+  text-decoration: none;
 }
 
 .item:hover {
@@ -468,12 +479,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 8px;
+  padding: 12px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #fefefe;
   pointer-events: auto;
+  text-decoration: none;
 }
 
 .item-add-box-text {
@@ -484,6 +496,8 @@
   line-height: 17px;
   color: #FFFFFF;
   margin-left: 8px;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 .item-add-box-link-button:hover {
@@ -558,6 +572,7 @@
   line-height: 24px;
   color: #FBFBFB;
   margin-top: 28px;
+  text-decoration: none;
 }
 
 .feature-details {
@@ -570,6 +585,7 @@
   color: #FBFBFB;
   width: 360px;
   margin-top: 16px;
+  text-decoration: none;
 }
 
 /* --- subscription --- */
@@ -614,6 +630,7 @@
   color: #222224;
   max-width: 360px;
   margin-top: 30px;
+  text-decoration: none;
 }
 
 .subscription-form {
@@ -650,6 +667,7 @@
   line-height: 167.2%;
   text-align: center;
   color: #222224;
+  text-decoration: none;
 }
 
 .subscription-form-text-main {
@@ -690,6 +708,7 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   position: relative;
+  text-decoration: none;
 }
 
 .subscription-form-field-text::-webkit-input-placeholder {
@@ -738,6 +757,7 @@
   background: #F16D7F;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+  text-decoration: none;
 }
 
 /* --- footer --- */
@@ -802,7 +822,7 @@
 }
 
 /* --- catalog --- */
-.breadcrumb {
+.navigation-breadcrumb {
   background-color: #F8F3F4;
   height: 148px;
   display: -webkit-box;
@@ -815,6 +835,11 @@
           align-items: center;
 }
 
+.breadcrumb-currentlocation {
+  margin-right: 10px;
+  width: 200px;
+}
+
 .breadcrumb-location-text {
   font-family: 'Lato';
   font-style: normal;
@@ -822,6 +847,7 @@
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
+  text-decoration: none;
 }
 
 .breadcrumb-nav {
@@ -843,6 +869,7 @@
   font-size: 14px;
   line-height: 17px;
   color: #636363;
+  text-decoration: none;
 }
 
 .breadcrumb-nav-curloc {
@@ -852,5 +879,145 @@
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
+  text-decoration: none;
+}
+
+/* --- catalog  Filter --- */
+.filter-section {
+  position: relative;
+}
+
+.filter-placeholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -420%;
+  margin-top: 51px;
+  padding: 20px;
+  position: relative;
+  width: 130px;
+}
+
+.filter-placeholder .filter-text {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  -webkit-transform: uppercase;
+          transform: uppercase;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.filter-placeholder .filter-pic {
+  position: absolute;
+  left: 72px;
+  top: 23px;
+}
+
+.accordion {
+  width: 360px;
+  position: absolute;
+  left: 8px;
+  top: 42px;
+  z-index: 99;
+  display: none;
+}
+
+.accordion .accordion-button {
+  border-radius: 0px;
+  border-left: 5px solid #EF5B70;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  text-decoration: none;
+}
+
+.filter-placeholder:hover .accordion {
+  display: block;
+}
+
+.filter-placeholder:hover .filter-text {
+  color: #EF5B70;
+}
+
+.filter-placeholder:hover .filter-pic {
+  -webkit-filter: invert(51%) sepia(74%) saturate(2193%) hue-rotate(317deg) brightness(96%) contrast(95%);
+          filter: invert(51%) sepia(74%) saturate(2193%) hue-rotate(317deg) brightness(96%) contrast(95%);
+}
+
+.filter-data-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 500px;
+  left: 40%;
+  top: 269px;
+}
+
+.filter-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.filter-field-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter-field-icon {
+  width: 10px;
+  height: 5px;
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  display: block;
+  width: 50px;
+  top: 50px;
+  border-radius: 0%;
+}
+
+.form-check {
+  margin-left: 5px;
+}
+
+.form-check-input {
+  border: 1px solid #EBEBEB;
+  margin-left: -0.5em;
+}
+
+.form-check-label {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.form-check-label:hover {
+  color: #EF5B70;
+}
+
+.filter-field:hover .dropdown-menu {
+  display: block;
+}
+
+.catalog {
+  margin-top: 64px;
+  margin-left: 50%;
 }
 /*# sourceMappingURL=style.css.map */

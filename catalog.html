@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
@@ -61,7 +63,7 @@
     </header>
 
     <nav>
-        <div class="breadcrumb">
+        <div class="navigation-breadcrumb">
             <div class="breadcrumb-currentlocation">
                 <h1 class="breadcrumb-location-text">NEW ARRIVALS</h1>
             </div>
@@ -79,14 +81,186 @@
         </div>
     </nav>
 
-    <section>
-        <div class="filter">
+    <section class="filter-section-group container">
+        <div class="filter-section">
+            <div class="filter-placeholder">
+                <p class="filter-text">FILTER</p>
+                <img class="filter-pic" src="imgs/filter.svg" alt="filter">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                CATEGORY
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <a class="mega-link" href="#">Accessories</a>
+                                <a class="mega-link" href="#">Bags</a>
+                                <a class="mega-link" href="#">Denim</a>
+                                <a class="mega-link" href="#">Hoodies & Sweatshirts</a>
+                                <a class="mega-link" href="#">Jackets & Coats</a>
+                                <a class="mega-link" href="#">Polos</a>
+                                <a class="mega-link" href="#">Shirts</a>
+                                <a class="mega-link" href="#">Shoes</a>
+                                <a class="mega-link" href="#">Sweaters & Knits</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Tanks</a>
+                                <a class="mega-link" href="#">Happy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                BRAND
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <a class="mega-link" href="#">Sweaters & Knits</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Tanks</a>
+                                <a class="mega-link" href="#">Happy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                DESIGNER
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <a class="mega-link" href="#">Sweaters & Knits</a>
+                                <a class="mega-link" href="#">T-Shirts</a>
+                                <a class="mega-link" href="#">Tanks</a>
+                                <a class="mega-link" href="#">Happy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="filter-data-elements">
+            <div class="filter-field">
+                <div class="filter-field-header">
+                    <p class="filter-field-name">TRENDING NOW</p>
+                    <div class="filter-field-icon-parent">
+                        <img class="filter-field-icon" src="imgs/filterFieldIcon.svg" alt="dd">
+                    </div>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-field">
+                <div class="filter-field-header">
+                    <p class="filter-field-name">SIZE</p>
+                    <div class="filter-field-icon-parent">
+                        <img class="filter-field-icon" src="imgs/filterFieldIcon.svg" alt="dd">
+                    </div>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-field">
+                <div class="filter-field-header">
+                    <p class="filter-field-name">PRICE</p>
+                    <div class="filter-field-icon-parent">
+                        <img class="filter-field-icon" src="imgs/filterFieldIcon.svg" alt="dd">
+                    </div>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Something
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </section>
 
 
-    <section class="products container">
+
+
+    <section class="products-catalog container">
         <div class="item-flex">
             <div class="item">
                 <a class="item-link" href="#">
@@ -108,7 +282,7 @@
             </div>
             <div class="item">
                 <a class="item-link" href="#">
-                    <img class="item-picture" src="imgs/image.svg" alt="product">
+                    <img class="item-picture" src="imgs/product2.jpg" alt="product">
                     <div class="text-box">
                         <p class="item-title">ELLERY X M'O CAPSULE</p>
                         <p class="item-description">Known for her sculptural takes on traditional tailoring,
@@ -162,7 +336,7 @@
             </div>
             <div class="item">
                 <a class="item-link" href="#">
-                    <img class="item-picture" src="imgs/Rectangle 15 copy (3).svg" alt="product">
+                    <img class="item-picture" src="imgs/product3.jpg" alt="product">
                     <div class="text-box">
                         <p class="item-title">ELLERY X M'O CAPSULE</p>
                         <p class="item-description">Known for her sculptural takes on traditional tailoring,
@@ -180,7 +354,61 @@
             </div>
             <div class="item">
                 <a class="item-link" href="#">
-                    <img class="item-picture" src="imgs/Rectangle 15 copy (4).svg" alt="product">
+                    <img class="item-picture" src="imgs/product4.jpg" alt="product">
+                    <div class="text-box">
+                        <p class="item-title">ELLERY X M'O CAPSULE</p>
+                        <p class="item-description">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym
+                            Ellery teams up with Moda Operandi.</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <div class="item-add-box">
+                    <a class="item-add-box-link-button" href="#">
+                        <img src="imgs/Basket.svg" alt="Product add">
+                        <p class="item-add-box-text">Add to cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="item-link" href="#">
+                    <img class="item-picture" src="imgs/product5.jpg" alt="product">
+                    <div class="text-box">
+                        <p class="item-title">ELLERY X M'O CAPSULE</p>
+                        <p class="item-description">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym
+                            Ellery teams up with Moda Operandi.</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <div class="item-add-box">
+                    <a class="item-add-box-link-button" href="#">
+                        <img src="imgs/Basket.svg" alt="Product add">
+                        <p class="item-add-box-text">Add to cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="item-link" href="#">
+                    <img class="item-picture" src="imgs/product6.jpg" alt="product">
+                    <div class="text-box">
+                        <p class="item-title">ELLERY X M'O CAPSULE</p>
+                        <p class="item-description">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym
+                            Ellery teams up with Moda Operandi.</p>
+                        <p class="item-price">$52.00</p>
+                    </div>
+                </a>
+                <div class="item-add-box">
+                    <a class="item-add-box-link-button" href="#">
+                        <img src="imgs/Basket.svg" alt="Product add">
+                        <p class="item-add-box-text">Add to cart</p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="item-link" href="#">
+                    <img class="item-picture" src="imgs/product7.jpg" alt="product">
                     <div class="text-box">
                         <p class="item-title">ELLERY X M'O CAPSULE</p>
                         <p class="item-description">Known for her sculptural takes on traditional tailoring,
@@ -197,10 +425,6 @@
                 </div>
             </div>
         </div>
-        <div class="products-all">
-            <a href="#" class="products-all-button">Browse All Products</a>
-        </div>
-
     </section>
 
 
@@ -280,7 +504,9 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
