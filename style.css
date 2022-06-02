@@ -1020,4 +1020,125 @@
   margin-top: 64px;
   margin-left: 50%;
 }
+
+/* --- Registration --- */
+.registration {
+  margin-bottom: 96px;
+  margin-top: 64px;
+}
+
+.registration-header {
+  margin-left: -65%;
+}
+
+.registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reg-label {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.reg-formation {
+  margin-bottom: 20px;
+}
+
+.reg-checkbox-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reg-checkbox-area .reg-checkbox-gender {
+  margin-right: 20px;
+}
+
+.reg-checkbox-area .reg-checkbox-gender .reg-gender {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.regPlaceholder {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  width: 360px;
+  height: 45px;
+}
+
+.reg-password-rules {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  width: 360px;
+  margin-bottom: 39px;
+}
+
+.reg-join-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 167px;
+  height: 50px;
+  background: #F16D7F;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.reg-join-btn .reg-join-btn-text {
+  margin-left: 15px;
+}
+
+.reg-join-btn .reg-join-btn-pic {
+  margin-right: 15px;
+}
+
+.registration-info {
+  margin-left: 20%;
+}
+
+.registration-info .reg-info-font {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.reg-perk {
+  margin-bottom: 16px;
+}
 /*# sourceMappingURL=style.css.map */
