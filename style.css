@@ -246,8 +246,7 @@
 
 /* --- Offers --- */
 .offer {
-  margin-top: 65px;
-  max-width: 1140px;
+  margin: 65px auto;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -258,6 +257,9 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .offer-level1 {
@@ -375,7 +377,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 96px;
+  margin: 96px auto;
 }
 
 .features-top {
@@ -436,7 +438,7 @@
 
 .item-link {
   display: block;
-  max-width: 360px;
+  max-width: 320px;
   text-decoration: none;
 }
 
@@ -569,6 +571,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 0 auto;
 }
 
 .feature-area {
@@ -736,6 +739,7 @@
   border-bottom-left-radius: 30px;
   position: relative;
   text-decoration: none;
+  border-color: #E1E1E1;
 }
 
 .subscription-form-field-text::-webkit-input-placeholder {
@@ -785,6 +789,7 @@
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   text-decoration: none;
+  border-color: #F16D7F;
 }
 
 /* --- footer --- */
