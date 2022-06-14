@@ -34,13 +34,13 @@
     min-height: 75px;
     background-color: #222222;
     width: 100%;
-    margin: 0 auto;
 }
 
 .header-elements {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 .top-header-area1 {
@@ -1233,6 +1233,10 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 162%;
+
+        .subscription-form-text-main {
+            font-size: 18px;
+        }
     }
 
     .footer {
@@ -1467,3 +1471,5 @@
 
 
 }
+
+@import 'cart';
