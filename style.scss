@@ -329,6 +329,12 @@
 
 /* --- Product items --- */
 
+.products-catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .item-flex {
     display: flex;
@@ -456,6 +462,124 @@
     color: #F26376;
     text-decoration: none;
 }
+
+/* --- pagination --- */
+
+.catalog-pages {
+    margin-top: 48px;
+    max-width: 388px;
+    width: 100%;
+    border: 1px solid #EBEBEB;
+}
+
+[data-pagination],
+[data-pagination] *,
+[data-pagination] *:before,
+[data-pagination] *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+    text-decoration: none;
+}
+
+[data-pagination] {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5D5D5D;
+    -webkit-text-size-adjust: 100%;
+    margin: 1em auto;
+    text-align: center;
+    transition: font-size .2s ease-in-out;
+    text-decoration: none;
+}
+
+[data-pagination] ul {
+    list-style-type: none;
+    display: inline;
+    font-size: 100%;
+    margin: 0;
+    padding: .5em;
+}
+
+[data-pagination] ul li {
+    display: inline-block;
+    font-size: 100%;
+    width: auto;
+    border-radius: 3px;
+}
+
+[data-pagination]>a {
+    font-size: 140%;
+}
+
+[data-pagination] a {
+    color: #777;
+    font-size: 100%;
+    padding: .5em;
+}
+
+[data-pagination] a:focus,
+[data-pagination] a:hover {
+    color: #f60;
+}
+
+[data-pagination] li.current {
+    background: rgba(0, 0, 0, .1)
+}
+
+.arrowButton:hover {
+    filter: invert(51%) sepia(74%) saturate(2193%) hue-rotate(317deg) brightness(96%) contrast(95%);
+}
+
+/* Disabled & Hidden Styles */
+[data-pagination] .disabled,
+[data-pagination] [hidden],
+[data-pagination] [disabled] {
+    opacity: .5;
+    pointer-events: none;
+}
+
+@media (min-width: 300px) {
+    [data-pagination] {
+        font-size: 10pt;
+    }
+
+    .catalog-pages {
+        margin-top: -10%;
+        margin-bottom: 85px;
+    }
+}
+
+@media (min-width: 550px) {
+    [data-pagination] {
+        font-size: 12pt;
+    }
+
+    .catalog-pages {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+}
+
+@media (min-width: 700px) {
+    [data-pagination] {
+        font-size: 14pt;
+    }
+}
+
+@media (min-width: 900px) {
+    [data-pagination] {
+        font-size: 16pt;
+    }
+}
+
 
 
 /* --- features --- */
