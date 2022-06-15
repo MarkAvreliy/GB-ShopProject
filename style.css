@@ -1707,6 +1707,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0 2%;
 }
 
 .cart .cart-product {
@@ -1719,7 +1720,6 @@
           flex-direction: column;
   max-width: 500px;
   width: 100%;
-  padding: 0 2%;
 }
 
 .cart .cart-product .cart-product-box {
@@ -1860,6 +1860,7 @@
   max-width: 360px;
   width: 100%;
   padding: 0 2%;
+  margin-left: 5%;
 }
 
 .cart-data-address {
@@ -2011,5 +2012,88 @@
   color: #FFFFFF;
   background: #F16D7F;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 59px;
+    margin-bottom: 120px;
+  }
+  .cart-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 630px;
+    width: 100%;
+  }
+  .cart-data .cart-data-address {
+    max-width: 300px;
+    width: 100%;
+    padding: 2%;
+  }
+  .cart-data .cart-data-total {
+    margin-top: 50px;
+    max-width: 360px;
+    width: 100%;
+  }
+  .cart-data .cart-data-total .cart-data-total-box {
+    max-width: 250px;
+    width: 100%;
+  }
+  .cart-data .cart-data-total .cart-data-total-box .cart-data-total-button {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .registration-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  .cart-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 550px;
+    width: 100%;
+  }
+  .cart-data .cart-data-address {
+    max-width: 500px;
+    width: 100%;
+  }
+  .cart-data .cart-data-total {
+    max-width: 500px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
